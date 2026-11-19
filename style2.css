@@ -46,7 +46,13 @@
 }
 
 /* Fixes: buttons keep their pill width, paragraphs get spacing, facts align to the top */
-.split .txt p+p{margin-top:18px}
-.split .txt .btn{align-self:flex-start;margin-top:30px}
+.split .txt p+p{margin-top:30px}
+.split .txt .btn{align-self:flex-start;margin-top:36px}
 .factsbar .inner{align-items:start}
 .factsbar .btn{align-self:center}
+
+/* Phone and tablet: homepage rhythm (24px between paragraphs, 30px above buttons) */
+@media(max-width:820px){
+  .split .txt p+p{margin-top:24px}
+  .split .txt .btn{margin-top:30px}
+}

@@ -88,3 +88,24 @@ footer{background:var(--ink);padding:56px 40px 64px;border-top:1px solid rgba(25
 @media(max-width:820px){
   .cols>.stack,.cols>#help{margin-top:24px}
 }
+
+/* Homepage rhythm. Values measured on the live homepage (Join Us In-Person and Give sections), Nov 19, 2026:
+   eyebrow to heading 30px, heading to text 20px, paragraph to paragraph 30px, text to button 36px,
+   heading to button 90px (Next Steps: 70px margin + 20px heading margin), section padding 58px, paragraph width 330px,
+   Next Steps block vertically centered next to the Join column. */
+.band .eyebrow,.split .eyebrow,.help .eyebrow{margin-bottom:30px}
+h2{margin-bottom:20px}
+.band p+p,.split .txt p+p,.help p+p{margin-top:30px}
+.band .btn,.split .txt .btn{margin-top:36px}
+.cols{padding-top:58px;padding-bottom:58px}
+.hp .cols p{max-width:330px}
+.hp .cols>.stack{align-self:center}
+.hp .cols>.stack .btn{margin-top:70px}
+@media(max-width:820px){
+  .cols{padding:42px 36px 44px}
+  .band p+p,.split .txt p+p,.help p+p{margin-top:24px}
+  .band .btn,.split .txt .btn{margin-top:30px}
+  .hp .cols p{max-width:none}
+  .hp .cols>.stack{align-self:auto}
+  .hp .cols>.stack .btn{margin-top:56px}
+}
