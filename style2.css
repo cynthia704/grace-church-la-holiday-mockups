@@ -10,16 +10,16 @@
 .factsbar .inner{max-width:1160px;margin:0 auto;padding:44px 40px;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:36px;align-items:center}
 .factsbar.two .inner{grid-template-columns:repeat(2,1fr)}
 .factsbar .cell b{display:block;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--sage);margin-bottom:6px}
-.factsbar .cell span{font-size:22px;line-height:1.3}
+.factsbar .cell span{font-size:20px;line-height:1.3}
 .factsbar .btn{margin:0}
 .factsbar.two .cell{border-left:3px solid var(--sage);padding-left:24px}
 .factsbar.two h3{font-size:30px;margin-bottom:8px;letter-spacing:-.02em}
 .factsbar.two p{font-size:19px}
 
 /* Split: one big photo beside the text */
-.split{display:grid;grid-template-columns:1fr 1fr;min-height:480px;background:var(--ink)}
+.split{display:grid;grid-template-columns:1fr 1fr;background:var(--ink)}
 .split.alt{background:var(--panel)}
-.split .pic{position:relative;overflow:hidden;min-height:480px}
+.split .pic{position:relative;overflow:hidden}
 .split .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:brightness(.82)}
 .split .pic img[src*="hero-a"]{object-position:42% 0%}
 .split .pic img[src*="hero-b"]{object-position:50% 20%}
@@ -27,7 +27,7 @@
 .split .pic img[src*="conversation"]{object-position:50% 0%}
 .split .pic img[src*="christmas-backdrop"]{object-position:50% 42%}
 .split .pic img[src*="volunteers"]{object-position:50% 44%}
-.split .txt{display:flex;flex-direction:column;justify-content:center;padding:64px 56px;max-width:640px}
+.split .txt{display:flex;flex-direction:column;justify-content:center;padding:56px;max-width:640px}
 .split.rev .pic{order:2}
 .split.rev .txt{order:1;justify-self:end}
 
